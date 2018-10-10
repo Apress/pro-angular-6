@@ -1,0 +1,11 @@
+<div class="row m-2">
+    <div class="col-4 p-2">
+      <paProductForm (paNewProduct)="addProduct($event)"></paProductForm>
+    </div>
+    <div class="col-8 p-2">
+      <paToggleView>
+        <paProductTable [model]="model"></paProductTable>
+      </paToggleView>
+    </div>
+  </div>
+  

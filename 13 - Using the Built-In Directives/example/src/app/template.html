@@ -1,0 +1,20 @@
+<ng-template #titleTemplate let-text="title">
+    <h4 class="p-2 bg-success text-white">{{text}}</h4>
+  </ng-template>
+  
+  <ng-template [ngTemplateOutlet]="titleTemplate"
+               [ngTemplateOutletContext]="{title: 'Header'}">
+  </ng-template>
+  
+  <div class="bg-info p-2 m-2 text-white">
+    There are {{getProductCount()}} products.
+  </div>
+  
+  <ng-template [ngTemplateOutlet]="titleTemplate"
+               [ngTemplateOutletContext]="{title: 'Footer'}">
+  </ng-template>
+  
+  <div class="bg-info p-2 text-white">
+    The rounded price is {{getProductPrice(1)}}
+  </div>
+  
