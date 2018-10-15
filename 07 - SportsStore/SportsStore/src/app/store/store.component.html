@@ -6,7 +6,7 @@
     </div>
     <div class="row">
   
-      <div class="col-3 p-2">
+      <div class="col-3 py-2">
         <button class="btn btn-block btn-outline-primary" (click)="changeCategory()">
           Home
         </button>
@@ -17,7 +17,7 @@
         </button>
       </div>
   
-      <div class="col-9 p-2">
+      <div class="col-9 py-2">
         <div *ngFor="let product of products" class="card m-1 p-1 bg-light">
           <h4>
             {{product.name}}
