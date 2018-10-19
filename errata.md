@@ -1,13 +1,11 @@
-# Errata for *Book Title*
+# Errata for Pro Angular, 6
 
-On **page xx** [Summary of error]:
+## Errata for Chapter 5 / JavaSCript and TypeScript: part 1
+
+On **page 64**:
  
-Details of error here. Highlight key pieces in **bold**.
+Correct command for creating new project in section "Preparing the Example Project" must be 
 
-***
-
-On **page xx** [Summary of error]:
- 
-Details of error here. Highlight key pieces in **bold**.
+    ng new JavaScriptPrimer
 
 ***
