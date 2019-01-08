@@ -1,5 +1,16 @@
 # Errata for *Pro Angular 6*
 
+
+**Chapter 5**
+
+The command to create the example project should be as follows:
+
+    ng new JavaScriptPrimer
+
+(Thanks to David Deboeck for reporting this problem)
+
+---
+
 **Chapter 8**
 
 The `deleteOrder` method in Listing 9-16 deletes all of the orders from the client because it uses the `splice` method on an array without an argument to specify the number of objects to be removed. Use the following implementation of the methods instead:
@@ -11,6 +22,8 @@ The `deleteOrder` method in Listing 9-16 deletes all of the orders from the clie
     }
 
 (Thanks to Damian Murtha for reporting this problem)
+
+---
 
 **Chapter 10**
 
