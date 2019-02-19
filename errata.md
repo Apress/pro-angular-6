@@ -1,5 +1,25 @@
 # Errata for *Pro Angular 6*
 
+**All Chapters**
+
+You may encounter problems compiling projects and receive error messages like this:
+
+    ERROR in node_modules/rxjs/internal/types.d.ts(81,44): error TS1005: ';' expected.
+
+There have been breaking changes between the RxJS and Angular packages that mean  the TypeScript compiler can't process the RXJS type definitions correctly. To resolve this problem, edit the `package.json` file to replace this line:
+
+    "rxjs": "^6.0.0",
+
+with this one:
+
+    "rxjs": "6.3.3",
+
+Save the change to the `package.json` file and  run `npm install` to get a version of the RXJS package that won't cause a problem.
+
+This problem is resolved in Angular 7, for which I have provided a free update in this repository.
+
+---
+
 
 **Chapter 5**
 
